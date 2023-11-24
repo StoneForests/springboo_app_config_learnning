@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 10.0.113.62:28848
+        namespace: test
+        file-extension: yaml
+        username: hdgp_nacos_dev
+        password: 5fvPfnbkm_GOPCX
+        group: DEFAULT_GROUP
+        prefix: springcloud_app_config_learning
+        shared-configs:
+          - dataId: springcloud_app_config_learning-shared.yaml
+            group: group-shared
+        extension-configs:
+          - dataId: springcloud_app_config_learning-ext.yaml
+            group: group-ext
